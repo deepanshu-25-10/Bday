@@ -31,13 +31,16 @@
       <div class="parallax__fade"></div>
     </div>
   </section>
+</div>
 
+
+<section>
   <style>body {
-    background: #eee;
+    background: #000000;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
-    background: #404449;
+    background: #131212;
     margin: 0;
     padding: 0;
   }
@@ -78,7 +81,6 @@
   }
   </style>
 
-  
   <div class="swiper-container">
     <div class="swiper-wrapper">
   
@@ -96,21 +98,12 @@
       </div>
 
     </div>
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-  </div>
 
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="slide-inner" style="background-image: url('https://example.com/image1.jpg');"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide-inner" style="background-image: url('https://example.com/image2.jpg');"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide-inner" style="background-image: url('https://example.com/image3.jpg');"></div>
-      </div>
+    <div class="button-container">
+      <!-- Button inside the div -->
+      <button type="button" id="myButton" class="my-class" onclick="alert('Button clicked!')" disabled>
+        Click Me
+      </button>
     </div>
 <script>document.addEventListener("DOMContentLoaded", function () {
   
@@ -155,8 +148,8 @@
   const swiper = new Swiper(".swiper-container", swiperOptions);
 
   // Add scroll functionality to the navigation buttons
-  const nextButton = document.querySelector(".swiper-button-next");
-  const prevButton = document.querySelector(".swiper-button-prev");
+  // const nextButton = document.querySelector(".swiper-button-next");
+  // const prevButton = document.querySelector(".swiper-button-prev");
 
   // Go to the next slide when next button is clicked
   if (nextButton) {
@@ -172,7 +165,12 @@
     });
   }
 });
+
 </script>
+
+</section>
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
