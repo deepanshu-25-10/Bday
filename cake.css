@@ -12,6 +12,8 @@ body {
 
 #cake {
     transform: scale(2);
+  height: 50%;
+  width: 50%;
   display: block;
   position: relative;
   margin: -10em auto 0 auto;
@@ -24,13 +26,13 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 375px;
+  top: 40%;
   left: 50%;
   margin-left: -2.4px;
-  margin-top: -8.33333333px;
+  margin-top: -3.33333333px;
   width: 8px;
   height: 45px;
-  transform: translateY(-500px);
+  transform: translateY(-700px);
   backface-visibility: hidden;
   animation: in 500ms 6s ease-out forwards;
 }
@@ -109,7 +111,10 @@ body {
   font-style:italic;
   text-align: center;
   margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
   h1 {
-    font-size: 1.4em;
+    font-weight: bold;
+    font-size: 2.2em;
   }
 }  
